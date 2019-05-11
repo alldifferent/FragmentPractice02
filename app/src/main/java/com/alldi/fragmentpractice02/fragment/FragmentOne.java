@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.alldi.fragmentpractice02.MainActivity;
 import com.alldi.fragmentpractice02.R;
 import com.alldi.fragmentpractice02.databinding.FragmentOneBinding;
 
@@ -33,7 +34,7 @@ public class FragmentOne extends Fragment {
             @Override
             public void onClick(View view) {
                 String title = binding.titleEdt.getText().toString();
-                getActivity().setTitle(title);
+                ((MainActivity) getActivity()).setCustomTitle(title);
             }
         });
 

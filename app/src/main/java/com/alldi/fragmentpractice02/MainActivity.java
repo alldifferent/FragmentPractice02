@@ -116,6 +116,11 @@ public class MainActivity extends BaseActivity {
 
     }
 
+    public void setCustomTitle(String inputTitle){
+        setTitle(String.format("입력값 : %s", inputTitle));
+        act.testEdt.setText(inputTitle);
+    }
+
     @Override
     public void bindView() {
 
