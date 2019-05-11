@@ -92,7 +92,14 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
 
+                Fragment currentFrag = pagerAdapter.getItem(act.viewPager.getCurrentItem());
+                if (act.viewPager.getCurrentItem() == 0){
 
+                }else if (act.viewPager.getCurrentItem() == 1){
+
+                }else if (act.viewPager.getCurrentItem() == 2){
+
+                }
 
             }
         });
