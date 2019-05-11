@@ -16,6 +16,7 @@ import com.alldi.fragmentpractice02.fragment.FragmentTwo;
 public class MainActivity extends BaseActivity {
 
     ActivityMainBinding act;
+    PagerAdapter pagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,7 +102,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void setValues() {
         act.viewPager.setOffscreenPageLimit(4);// 프래그먼트의 갯수와 맞춰주자
-        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 3);
+        pagerAdapter = new PagerAdapter(getSupportFragmentManager(), 3);
         act.viewPager.setAdapter(pagerAdapter);
 
     }
