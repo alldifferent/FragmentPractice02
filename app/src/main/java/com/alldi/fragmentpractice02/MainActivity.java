@@ -87,6 +87,15 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+        act.okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+            }
+        });
+
     }
 
     @Override

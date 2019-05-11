@@ -12,6 +12,8 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
     int mNumOfTabs;
 
+    Fragment frag1, frag2, frag3;
+
     public PagerAdapter(FragmentManager fm, int numOfTabs){
         super(fm);
         mNumOfTabs = numOfTabs;
@@ -23,13 +25,21 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         Fragment fr = null;
 
         if (position == 0){
-            FragmentOne frag1 = new FragmentOne();
+            if (frag1 == null){
+                frag1 = new FragmentOne();
+            }
             fr = frag1;
         }else if (position == 1){
-            FragmentTwo frag2 = new FragmentTwo();
+            if (frag2 == null){
+                frag2 = new FragmentTwo();
+            }
+            frag2 = new FragmentTwo();
             fr = frag2;
         }else if (position == 2){
-            FragmentThree frag3 = new FragmentThree();
+            if (frag3 == null){
+                frag3 = new FragmentThree();
+            }
+            frag3 = new FragmentThree();
             fr = frag3;
         }
 
