@@ -33,13 +33,11 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
             if (frag2 == null){
                 frag2 = new FragmentTwo();
             }
-            frag2 = new FragmentTwo();
             fr = frag2;
         }else if (position == 2){
             if (frag3 == null){
                 frag3 = new FragmentThree();
             }
-            frag3 = new FragmentThree();
             fr = frag3;
         }
 
