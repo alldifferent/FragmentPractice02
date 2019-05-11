@@ -28,4 +28,10 @@ public class FragmentTwo extends Fragment {
         super.onActivityCreated(savedInstanceState);
         binding.twoTxt.setText("두번째 바인딩 성공");
     }
+
+    public void changeMessage(String inputMessage){
+
+        binding.twoTxt.setText(inputMessage);
+
+    }
 }

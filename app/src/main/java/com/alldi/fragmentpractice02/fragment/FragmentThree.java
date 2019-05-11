@@ -28,4 +28,8 @@ public class FragmentThree extends Fragment {
         super.onActivityCreated(savedInstanceState);
         binding.threeTxt.setText("세번째 바인딩 성공");
     }
+
+    public void changeMessage(String inputMessage){
+        binding.threeTxt.setText(inputMessage);
+    }
 }

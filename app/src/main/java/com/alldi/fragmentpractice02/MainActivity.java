@@ -11,6 +11,8 @@ import android.view.View;
 
 import com.alldi.fragmentpractice02.adapters.PagerAdapter;
 import com.alldi.fragmentpractice02.databinding.ActivityMainBinding;
+import com.alldi.fragmentpractice02.fragment.FragmentOne;
+import com.alldi.fragmentpractice02.fragment.FragmentThree;
 import com.alldi.fragmentpractice02.fragment.FragmentTwo;
 
 public class MainActivity extends BaseActivity {
@@ -94,11 +96,11 @@ public class MainActivity extends BaseActivity {
 
                 Fragment currentFrag = pagerAdapter.getItem(act.viewPager.getCurrentItem());
                 if (act.viewPager.getCurrentItem() == 0){
-
+                    ((FragmentOne) currentFrag).changeTextMsg(act.testEdt.getText().toString());
                 }else if (act.viewPager.getCurrentItem() == 1){
-
+                    ((FragmentTwo) currentFrag).changeMessage(act.testEdt.getText().toString());
                 }else if (act.viewPager.getCurrentItem() == 2){
-
+                    ((FragmentThree) currentFrag).changeMessage(act.testEdt.getText().toString());
                 }
 
             }

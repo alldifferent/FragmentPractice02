@@ -29,5 +29,17 @@ public class FragmentOne extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         binding.myTextView.setText("데이터 바인딩 성공");
+        binding.okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String title = binding.titleEdt.getText().toString();
+                getActivity().setTitle(title);
+            }
+        });
+
+    }
+
+    public void changeTextMsg(String inputMessage){
+        binding.myTextView.setText(inputMessage);
     }
 }

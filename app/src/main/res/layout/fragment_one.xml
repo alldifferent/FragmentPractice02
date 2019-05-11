@@ -6,6 +6,7 @@
         android:layout_height="match_parent"
         android:background="#ff0000"
         android:gravity="center"
+        android:orientation="vertical"
         >
 
         <TextView
@@ -16,6 +17,31 @@
             android:textSize="30sp"
             android:textColor="#ffffff"
             />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/titleEdt"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                />
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="액티비티 제목 변경"
+                />
+
+
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
